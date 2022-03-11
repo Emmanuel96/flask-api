@@ -18,11 +18,6 @@ Swagger(app)
 pickle_in = open("model.pkl",'rb')
 classifier=pickle.load(pickle_in)
 
-# 'diagnosis', 'radius_mean', 'texture_mean', 'smoothness_mean',
-#        'compactness_mean', 'symmetry_mean', 'fractal_dimension_mean',
-#        'radius_se', 'texture_se', 'smoothness_se', 'compactness_se',
-#        'symmetry_se', 'fractal_dimension_se'
-
 @app.route('/')
 def hello():
     return "You are the best Noopa! Thank you for always being understanding."
